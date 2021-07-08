@@ -22,6 +22,17 @@ Add Select cdn to layout.cshtml
 ```
 ## How to use Data Table
 ```sh
+add this to the layout.cshtml
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
+    <script src="~/Content/datatables/datatables.min.js"></script>
+    <link href="~/Content/datatables/datatables.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <script src="//cdn.datatables.net/plug-ins/1.10.12/sorting/datetime-moment.js"></script>
+    <script src="//cdn.datatables.net/plug-ins/1.10.25/dataRender/datetime.js"></script>
+```
+
+```sh
 In Datatable you need to Create PartialViewResult in Controller
 and Render it to the main page
 @Html.Action("YourPartialViewResultForDataTable");
