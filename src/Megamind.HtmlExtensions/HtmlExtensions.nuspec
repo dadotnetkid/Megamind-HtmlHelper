@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>1.0.3</version>
+    <title>Megamind Html Extension</title>
+    <authors>Mark Christopher R. Cacal</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
+    <iconUrl>https://www.megamind-it.com/wp-content/themes/jupiter/assets/images/jupiter-logo.png</iconUrl>
+    <description>This nuget is for Megamind IT Solution Only</description>
+    <releaseNotes>Added Datatable and Modal extension</releaseNotes>
+    <copyright>Mark Christopher R. Cacal</copyright>
+    <tags>Megamind</tags>
+  </metadata>
+</package>

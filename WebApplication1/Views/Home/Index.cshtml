@@ -1,0 +1,27 @@
+﻿@using HtmlExtensions
+@using HtmlExtensions.Bootstrap
+@using HtmlExtensions.DataTables
+@using HtmlExtensions.Modal
+@using HtmlExtensions.Select
+@using WebApplication1.Controllers
+@using HtmlExtensions.Base
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+@{
+    Html.Megamind().Modal(settings =>
+    {
+        settings.Name = "Modal";
+        settings.Propertie
+        settings.SetTemplateBodyContent(() =>
+        {
+
+        });
+        settings.SetTemplateFooterContent(() =>
+        {
+
+        });
+    }).Render();
+}
