@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F39797E6-48F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlExtensions", "src\Megamind.HtmlExtensions\HtmlExtensions.csproj", "{51FED9ED-3D7E-4E78-B821-625FBAC664E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{9EA6A660-1E1B-49C5-A9D7-3CCD6C067495}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{51FED9ED-3D7E-4E78-B821-625FBAC664E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51FED9ED-3D7E-4E78-B821-625FBAC664E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51FED9ED-3D7E-4E78-B821-625FBAC664E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA6A660-1E1B-49C5-A9D7-3CCD6C067495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA6A660-1E1B-49C5-A9D7-3CCD6C067495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA6A660-1E1B-49C5-A9D7-3CCD6C067495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA6A660-1E1B-49C5-A9D7-3CCD6C067495}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{51FED9ED-3D7E-4E78-B821-625FBAC664E6} = {F39797E6-48F8-4D64-BE2B-0E6BE81CBBBA}
+		{9EA6A660-1E1B-49C5-A9D7-3CCD6C067495} = {F39797E6-48F8-4D64-BE2B-0E6BE81CBBBA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE93ACB6-2E5D-4242-A009-AD9FED8BCA5A}

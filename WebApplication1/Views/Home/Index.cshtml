@@ -5,23 +5,20 @@
 @using HtmlExtensions.Select
 @using WebApplication1.Controllers
 @using HtmlExtensions.Base
+@using HtmlExtensions.TextBox
 @{
     ViewBag.Title = "Home Page";
+
+
 }
-
-
 @{
-    Html.Megamind().Modal(settings =>
+    Html.Megamind().Select(settings =>
     {
-        settings.Name = "Modal";
-        settings.Propertie
-        settings.SetTemplateBodyContent(() =>
-        {
-
-        });
-        settings.SetTemplateFooterContent(() =>
-        {
-
-        });
-    }).Render();
+        settings.Name = "select2";
+        settings.ServerSide = true;
+        settings.DetailSetting.ApiRoute = Url.Action("GetSelectData");
+        settings.DisplayMember = "FirstName";
+        settings.ValueMember = "Id";
+        settings.Properties.CustomCss = "form-control";
+    });
 }
