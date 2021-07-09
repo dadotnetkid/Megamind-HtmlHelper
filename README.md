@@ -79,3 +79,21 @@ Html.Megamind().DataTable(settings =>
     });
 }
 ```
+
+## How to use Modal
+```
+@{
+    Html.Megamind().Modal(settings =>
+    {
+        settings.Name = "Modal";
+        settings.SetTemplateBodyContent(() =>
+        {
+
+        });
+        settings.SetTemplateFooterContent(() =>
+        {
+
+        });
+    }).Render();
+}
+```
