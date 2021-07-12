@@ -11,5 +11,6 @@ namespace HtmlExtensions.Base
         public string KeyUp { get; set; }
         public string OnEnter { get; set; }
         public string OnChange { get; set; }
+        public string AfterUpload { get; set; }
     }
 }

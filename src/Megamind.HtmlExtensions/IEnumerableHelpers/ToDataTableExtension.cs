@@ -42,6 +42,8 @@ namespace HtmlExtensions.IEnumerableHelpers
             var direction = HttpContext.Current.Request.Params["order[0][dir]"] == "asc" ? "ascending" : "descending";
             var orderBy = HttpContext.Current.Request.Params["columns[" + columnOrder + "][data]"] == null ? "" : HttpContext.Current.Request.Params["columns[" + columnOrder + "][data]"];
 
+            if (string.IsNullOrEmpty(orderBy))
+                return ListToDataTable(list, searchValue);
             return ListToDataTable(list, searchValue).OrderBy(orderBy + " " + direction);
         }
         internal static IQueryable ListToDataTable<T>(List<T> list, string term)

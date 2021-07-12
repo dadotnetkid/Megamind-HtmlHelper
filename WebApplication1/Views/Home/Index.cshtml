@@ -5,20 +5,20 @@
 @using HtmlExtensions.Select
 @using WebApplication1.Controllers
 @using HtmlExtensions.Base
+@using HtmlExtensions.FileUpload
 @using HtmlExtensions.TextBox
+@model Test
 @{
     ViewBag.Title = "Home Page";
 
 
 }
+
 @{
-    Html.Megamind().Select(settings =>
+    Html.Megamind().UploadControl(settings =>
     {
-        settings.Name = "select2";
-        settings.ServerSide = true;
-        settings.DetailSetting.ApiRoute = Url.Action("GetSelectData");
-        settings.DisplayMember = "FirstName";
-        settings.ValueMember = "Id";
-        settings.Properties.CustomCss = "form-control";
+        settings.Name = "FileUpload";
+        settings.FileUploadDetailSetting.UploadUrl = Url.Action("UploadFiles");
+        settings.ClientSideEvents.AfterUpload = "function(xhr){console.log(xhr)}";
     });
 }

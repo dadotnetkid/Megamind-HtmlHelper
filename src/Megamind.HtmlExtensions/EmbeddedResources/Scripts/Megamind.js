@@ -18,7 +18,14 @@ $.prototype.getValue = function () {
     var self = $(this);
     return self.val();
 }
-
+$.prototype.setValue = function (value) {
+    var self = $(this);
+    return self.val(value);
+}
+$.prototype.setSelectValue = function (value) {
+    var self = $(this);
+    return self.val(value).trigger('change');
+}
 
 $.prototype.enableField = function () {
     var self = $(this);

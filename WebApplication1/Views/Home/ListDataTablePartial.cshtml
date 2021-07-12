@@ -2,14 +2,15 @@
 @using HtmlExtensions.DataTables
 @using HtmlExtensions.Modal
 @using WebApplication1.Controllers
+@using HtmlExtensions.Base
 @{
     Html.Megamind().DataTable(settings =>
     {
         settings.Name = "example";
-        settings.ServerSide = true ;
+        settings.ServerSide = true;
         settings.DetailSetting.CallbackRoute = Url.Action("ListDataTablePartial");
         settings.DetailSetting.ApiRoute = Url.Action("GetTestData");
-        settings.DetailSetting.UpdateCallbackRoute= Url.Action("GetTestData");
+        settings.DetailSetting.UpdateCallbackRoute = Url.Action("GetTestData");
         settings.DetailSetting.DeleteCallbackRoute = Url.Action("Delete");
 
         settings.Properties.EnableDelete = true;
@@ -33,7 +34,7 @@
         {
             col.Name = nameof(Test.BirthDate);
             col.Caption = "Birth Date";
-            col.Properties.DisplayFormatString="MM/DD/YYYY";
+            col.Properties.DisplayFormatString = "MM/DD/YYYY";
         });
         settings.SetTemplateContent<Test>((content) =>
         {

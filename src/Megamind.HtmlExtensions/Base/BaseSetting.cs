@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HtmlExtensions.Utils;
 
 namespace HtmlExtensions.Base
 {
     public class BaseSetting
     {
+        public BaseSetting()
+        {
+           
+
+        }
         /// <summary>
         /// Get Element Id
         /// </summary>
@@ -19,7 +25,7 @@ namespace HtmlExtensions.Base
 
         public IMegamindExtension IMegamindExtension { get; set; }
 
-
+        public MegamindWriter Writer => new MegamindWriter(IMegamindExtension.HtmlHelper.ViewContext.Writer);
         /// <summary>
         /// Gets a value that indicate whether it calls using API Endpoint
         /// </summary>

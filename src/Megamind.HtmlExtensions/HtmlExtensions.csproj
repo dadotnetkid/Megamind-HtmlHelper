@@ -88,6 +88,8 @@
     <Compile Include="Controllers\ScriptController.cs" />
     <Compile Include="DataTables\DataTableExtension.cs" />
     <Compile Include="ExtensionProperties\HeaderProperties.cs" />
+    <Compile Include="FileUpload\FileUploadExtenstion.cs" />
+    <Compile Include="FileUpload\FileUploadProperties.cs" />
     <Compile Include="HtmlExtension.cs" />
     <Compile Include="IEditor.cs" />
     <Compile Include="IEnumerableHelpers\ToDataTableExtension.cs" />
@@ -115,13 +117,41 @@
     <Folder Include="HISNurse\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Scripts\Megamind.js" />
+    <EmbeddedResource Include="EmbeddedResources\Scripts\FileUpload\2jquery.iframe-transport.js" />
+    <EmbeddedResource Include="EmbeddedResources\Scripts\FileUpload\5jquery.fileupload-process.js" />
+    <EmbeddedResource Include="EmbeddedResources\Scripts\FileUpload\6jquery.fileupload-audio.js" />
+    <EmbeddedResource Include="EmbeddedResources\Scripts\FileUpload\7jquery.fileupload-image.js" />
+    <EmbeddedResource Include="EmbeddedResources\Scripts\FileUpload\8jquery.fileupload-validate.js" />
+    <EmbeddedResource Include="EmbeddedResources\Scripts\FileUpload\9jquery.fileupload-video.js" />
+    <EmbeddedResource Include="EmbeddedResources\Scripts\Megamind.js" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Scripts\select2.min.js" />
+    <EmbeddedResource Include="EmbeddedResources\Scripts\select2.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Styles\select2.min.css" />
+    <EmbeddedResource Include="EmbeddedResources\Styles\select2.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedResources\Scripts\datatables.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedResources\Styles\datatables.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedResources\Scripts\moment.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedResources\Scripts\FileUpload\4jquery.fileupload-ui.js" />
+    <EmbeddedResource Include="EmbeddedResources\Scripts\FileUpload\3jquery.fileupload.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedResources\Styles\FIleUpload\jquery.fileupload-noscript.css" />
+    <EmbeddedResource Include="EmbeddedResources\Styles\FIleUpload\jquery.fileupload-ui-noscript.css" />
+    <EmbeddedResource Include="EmbeddedResources\Styles\FIleUpload\jquery.fileupload-ui.css" />
+    <EmbeddedResource Include="EmbeddedResources\Styles\FIleUpload\jquery.fileupload.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedResources\Scripts\FileUpload\1jquery.ui.widget.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

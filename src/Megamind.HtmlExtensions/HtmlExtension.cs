@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Html;
 using System.Web.WebPages;
+using HtmlExtensions.Base;
 using Newtonsoft.Json;
 
 namespace HtmlExtensions
@@ -333,17 +334,7 @@ namespace HtmlExtensions
 
             return sb;
         }
-        public class MegamindExtension<T>
-        {
-            public MvcHtmlString MvcHtmlString { get; set; }
-            public List<T> Datasource { get; set; }
-            public FormSettings FormSettings { get; set; }
-            public HtmlHelper HtmlHelper { get; set; }
-            public string DataUrl { get; set; }
-            public string FormScript { get; set; }
-            internal string UrlFormId { get; set; }
-            internal DataLinkUrl DataLinkUrl { get; set; } = new();
-        }
+      
 
         public class DataLinkUrl
         {
